@@ -11,7 +11,7 @@ In this exercise, you will be introduced to scaling up and scaling down an appli
 
 A ReplicaSet is defined with fields, including a selector that specifies how to identify Pods it can acquire, a number of replicas indicating how many Pods it should be maintaining, and a pod template specifying the data of new Pods it should create to meet the number of replicas criteria. A ReplicaSet then fulfills its purpose by creating and deleting Pods as needed to reach the desired number. When a ReplicaSet needs to create new Pods, it uses its Pod template.
 
-Using Armory Enterprise, you simply need to click on a field to scale up and down the number of pods to meet the demand. For rolling back an application, you will create a new pipeline.:
+Using Armory Enterprise, you simply need to create a pipeline to scale up and down the number of pods to meet the demand. The same approach of creating a pipeline is used to perform a rollback.  Below is an outline of the steps you will need to perform in this module.
 
 1. Create a pipeline and deploy an application.
 2. From the Armory UI, you will scale up and down the application.
